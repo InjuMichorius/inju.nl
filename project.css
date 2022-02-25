@@ -1,0 +1,41 @@
+.project_banner {
+    display: block;
+    margin: auto;
+}
+
+.details {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px auto;
+}
+
+.details li{
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.details li span{
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.section_project {
+    margin: auto;
+    width: 50%;
+}
+
+.section_project h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section_project p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+article p:last-of-type {
+    margin-bottom: 300px;
+}

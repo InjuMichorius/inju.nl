@@ -1,0 +1,15 @@
+:root {
+    --accent: blue;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    cursor: pointer;
+}
