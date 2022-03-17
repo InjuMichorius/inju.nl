@@ -1,0 +1,25 @@
+.cursor, .mini_cursor {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    z-index: 1;
+}
+
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+}
+
+.header__links li a:hover + .cursor{
+    border-color: var(--accent);
+}
+
+.mini_cursor {
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
+    transition: all .05s ease;
+}

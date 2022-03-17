@@ -1,0 +1,84 @@
+.banner_title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 50px 0;
+}
+
+.banner_text {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.section_projects {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+    position: relative;
+    height: 100%;
+}
+
+.project__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project__text_overlay {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 7, 237, .3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.project__text_overlay:hover {
+    opacity: 1;
+}
+
+.project__text_overlay > * {
+    transform: translateY(20px);
+    transition: transform .2s;
+}
+
+.project__text_overlay:hover > * {
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

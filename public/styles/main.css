@@ -1,0 +1,47 @@
+:root {
+    --accent: blue;
+}
+
+@font-face {
+    font-family: 'kayak';
+    src: url(../../fonts/Kayak\ Sans\ Regular.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+* {
+    font-family: 'kayak';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color:white;
+    background-color: var(--accent);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    cursor: none;
+}
+
+li a:hover {
+    color: var(--accent);
+}
+
+svg {
+    transition: all .3s ease-out;
+}
+
+svg:hover {
+    transform: translateY(-5px);
+    fill: var(--accent);
+}
