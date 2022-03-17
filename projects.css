@@ -27,6 +27,7 @@
 }
 
 .project__text_overlay {
+    text-decoration: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +44,6 @@
 
 .project__text_overlay:hover {
     opacity: 1;
-    cursor: pointer;
     transition: opacity .2s;
 }
 

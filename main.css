@@ -4,12 +4,26 @@
 
 body {
     overflow-x: hidden;
+    cursor: none;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-li {
-    cursor: pointer;
+a {
+    cursor: none;
+}
+
+li a:hover {
+    color: var(--accent);
+}
+
+svg {
+    transition: all .3s ease-out;
+}
+
+svg:hover {
+    transform: translateY(-5px);
+    fill: var(--accent);
 }
