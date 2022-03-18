@@ -3,6 +3,7 @@
     height: 160px;
     position: fixed;
     background-color: white;
+    z-index: 1000;
 }
 
 .header__nav {
@@ -63,10 +64,41 @@ li {
 }
 
 .header__socials_link {
-    height: 40px;
+    width: 40px;
 }
 
 .whitespace {
     width: 100vw;
     height: 160px;
+}
+
+@media only screen and (max-width: 600px) {
+    .whitespace {
+        height: 60px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header__nav {
+        width: 95%;
+        line-height: 60px;
+    }
+
+    .header__links li a {
+        font-size: 1em;
+    }
+
+    #site_logo {
+        opacity: 0;
+    }
+
+    .header__socials {
+        justify-content: flex-end;
+    }
+
+    .header__socials_link {
+        width: 20px;
+    }
 }
