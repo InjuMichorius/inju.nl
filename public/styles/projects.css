@@ -55,3 +55,15 @@
 .project__text_overlay:hover > * {
     transform: translateY(0);
 }
+
+@media only screen and (max-width: 1200px) {
+    .section_projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section_projects {
+        grid-template-columns: 1fr;
+    }
+}

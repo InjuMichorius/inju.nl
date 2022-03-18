@@ -60,7 +60,28 @@ dd {
 @media only screen and (max-width: 600px) {
     .section_project, dl {
         width: 90%;
+        max-height: none;
         font-size: .8em;
+        display: block;
+    }
+
+    dl {
+        margin: 20px auto;
+    }
+
+    dt{
+        display: inline-block;
+        min-width: 100px;
+    }
+
+    dd {
+        display: inline;
+        margin: 0;
+    }
+
+    dd:after{
+        display: block;
+        content: '';
     }
 
     .section_project h2 {
@@ -72,4 +93,16 @@ dd {
         font-size: 1em;
         margin-bottom: 20px;
     }
-  }
+}
+
+@media only screen and (min-width: 600px) {
+    .section_project, dl {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section_project, dl {
+        width: 50%;
+    }
+}
