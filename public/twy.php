@@ -46,6 +46,7 @@
             <p>After the research and concept phases, we started building ourselves and dropped a number of things. For example, we did start making a chatbot, but without Artificial Intelligence. TWY’s answers are therefore static but editable. But the main functionality is that by talking to TWY you can create your own unique music. There are a number of voice commands you can say to TWY. You can start by making a beat, which you can play slower or faster later. Then you can add a melody, it can also be slower or faster and finally you can add an effect over the melody. Every time you reload the page, the combination of the beat and the melody is unique. A random drum pattern and samples are loaded and the melody is also random every time. For now, the effect that can be put over the melody is the same every time.</p>
         </section>
     </main>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

@@ -56,3 +56,20 @@ dd {
     width: 100%;
     margin: 20px 0 60px 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .section_project, dl {
+        width: 90%;
+        font-size: .8em;
+    }
+
+    .section_project h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .section_project p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+  }

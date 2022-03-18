@@ -6,5 +6,5 @@
 <link rel="stylesheet" href="./styles/projects.css">
 <link rel="stylesheet" href="./styles/project.css">
 <link rel="stylesheet" href="./styles/cursor.css">
-<script src="./cursor.js" defer></script>
+<script src="./scripts/cursor.js" defer></script>
 <link rel="icon" type="png" href="../img/favicon16x16m.png">

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/public/styles/header.css">
     <link rel="stylesheet" href="/public/styles/projects.css">
     <link rel="stylesheet" href="/public/styles/cursor.css">
-    <script src="./cursor.js" defer></script>
+    <script src="/public/scripts/cursor.js" defer></script>
     <link rel="icon" type="png" href="../img/favicon16x16m.png">
     <title>Portfolio Inju Michorius</title>
 </head>
@@ -22,21 +22,21 @@
         <section class="section_projects">
             <article class="project">
                 <img class="project__img" src="/img/projectTWY.jpg" alt="">
-                <a href="twy.php" class="project__text_overlay">
+                <a href="/public/twy.php" class="project__text_overlay">
                     <h2>TWY</h2>
                     <p>Thunderboom Records</p>
                 </a>
             </article>
             <article class="project">
                 <img class="project__img" src="/img/projectTWY.jpg" alt="">
-                <a href="https://google.nl" class="project__text_overlay">
+                <a href="/public/twy.php" class="project__text_overlay">
                     <h2>Redesign</h2>
                     <p>HvanA</p>
                 </a>
             </article>
             <article class="project">
                 <img class="project__img" src="/img/projectTWY.jpg" alt="">
-                <a href="https://google.nl" class="project__text_overlay">
+                <a href="/public/twy.php" class="project__text_overlay">
                     <h2>Visual Interface Design</h2>
                     <p>Biblion</p>
                 </a>
