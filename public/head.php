@@ -7,4 +7,5 @@
 <link rel="stylesheet" href="./styles/project.css">
 <link rel="stylesheet" href="./styles/cursor.css">
 <script src="./scripts/cursor.js" defer></script>
+<script src="./scripts/randomColor.js"></script>
 <link rel="icon" type="png" href="../img/favicon16x16m.png">

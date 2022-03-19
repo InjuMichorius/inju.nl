@@ -3,7 +3,7 @@
 
 <head>
     <?php include 'head.php'; ?>
-    <title>Inju Michorius | TWY</title>
+    <title>Inju Michorius | About</title>
 </head>
 
 <body>

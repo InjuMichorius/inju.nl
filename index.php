@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/public/styles/projects.css">
     <link rel="stylesheet" href="/public/styles/cursor.css">
     <script src="/public/scripts/cursor.js" defer></script>
+    <script src="/public/scripts/randomColor.js" defer></script>
     <link rel="icon" type="png" href="../img/favicon16x16m.png">
     <title>Portfolio Inju Michorius</title>
 </head>

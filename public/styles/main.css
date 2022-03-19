@@ -43,5 +43,29 @@ svg {
 
 svg:hover {
     transform: translateY(-5px);
-    fill: var(--accent);
+    fill: rgba(var(--accent) 1);;
+}
+
+@media (prefers-color-scheme: dark) {
+    .cursor {
+        border-color: white;
+    }
+    .header {
+        background-color: #121212;
+        color: white;
+    }
+
+    .header__links li a {
+        color: white;
+    }
+
+    .header__socials_link {
+        fill: white;
+    }
+
+    body {
+        background-color: #202020;
+        color: white;
+    }
+
 }

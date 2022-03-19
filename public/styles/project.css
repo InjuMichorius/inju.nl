@@ -12,7 +12,7 @@ dl {
 }
 
 dt {
-    color: var(--accent);
+    color: rgba(var(--accent) 1);
     flex-basis: 20%;
     text-transform: uppercase;
 }
@@ -28,7 +28,7 @@ dd {
 
 .details li{
     font-size: 1.4rem;
-    color: var(--accent);
+    color: rgba(var(--accent) 1);
 }
 
 .details li span{
