@@ -1,103 +1,155 @@
+button {
+    display: none;
+}
+
 .header {
-    width: 100%;
-    height: 160px;
-    position: fixed;
+    width: 100vw;
+    height: 90px;
     z-index: 1000;
 }
 
-.header__nav {
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#site_logo {
-    width: 40%;
+nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 90px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 
-ul {
+.header__links {
+    display: flex;
+    gap: 30px;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    margin-left: 60px;
 }
 
-.header__socials {
-    justify-content: flex-end;
-}
-
-li {
-    display: inline;
-}
-
-a {
-    position: relative;
+header nav ul li a {
     text-decoration: none;
-    color: black;
-    font-size: 1.6rem;
+    font-size: 1.2em;
+    transform: translateY(20px);
+    transition: all .3s ease;
 }
 
 .header__links li a:hover {
     color: rgba(var(--accent) 1);
 }
 
-.header__links li a:before {
+.header__links li a:after {
+    position: relative;
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 100%;
+    display: block;
     height: 2px;
+    width: 100%;
+    background-color: rgba(var(--accent) 1);
     opacity: 0;
-    background-color: rgba(var(--accent) 1);;
-    transition: all .3s;
+    margin-top: 5px;
+    transform: translateY(5px);
+    transition: all .3s ease-out;
 }
 
-.header__links li a:hover:before {
-    bottom: -8px;
+.header__links li a:hover:after {
+    content: "";
     opacity: 1;
+    transform: translateY(0);
+
+}
+
+.header__socials {
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-right: 60px;
 }
 
 .header__socials_link {
-    width: 40px;
+    width: 30px;
 }
 
-.whitespace {
-    width: 100vw;
-    height: 160px;
-}
+
 
 @media only screen and (max-width: 600px) {
-    .whitespace {
-        height: 60px;
+    nav {
+        justify-content: flex-start;
     }
 
-    .header {
-        height: 60px;
+    .header__links {
+        margin-left: 20px;
+        gap: 15px;
     }
 
-    .header__nav {
-        width: 95%;
-        line-height: 60px;
+    .hamburger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        color: black;
+        font-size: 1.2em;
+        background-color: transparent;
+        border: none;
     }
 
-    .header__links li a {
-        font-size: 1em;
+    .burger-shower, .burger-menu {
+        display: none;
     }
 
-    #site_logo {
-        opacity: 0;
+    .burger-shower:checked ~ .burger-menu {
+        display: block;
     }
 
-    .header__socials {
-        justify-content: flex-end;
+    .hamburger:after {
+        content: "";
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        margin-left: 8px;
+        padding: 3px;
+        transform: rotate(45deg);
     }
 
-    .header__socials_link {
-        width: 20px;
+    .header__links li a:after {
+        display: none;
+    }
+
+    .burger-menu {
+        position: absolute;
+        left: 290px;
+        top: 60px;
+        background-color: white;
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .burger-menu li {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        vertical-align: middle;
+        position: relative;
+        width: 120px;
+    }
+
+    a[href="https://github.com/InjuMichorius/"]:after {
+        content: "GitHub";
+        margin-left: 8px;
+        position: absolute;
+        top: 5px;
+    }
+
+    a[href="https://www.instagram.com/injuux/"]:after {
+        content: "Instagram";
+        margin-left: 10px;
+        position: absolute;
+        top: 5px;
+    }
+
+    a[href="https://www.linkedin.com/in/jumichorius/"]:after {
+        content: "LinkedIn";
+        margin-left: 10px;
+        position: absolute;
+        top: 5px;
     }
 }

@@ -17,7 +17,7 @@
 }
 
 ::selection {
-    color:white;
+    color: white;
     background-color: var(--accent);
 }
 
@@ -29,7 +29,8 @@ body {
     display: none;
 }
 
-a {
+a, a:visited {
+    color: black;
     cursor: none;
 }
 
@@ -43,14 +44,14 @@ svg {
 
 svg:hover {
     transform: translateY(-5px);
-    fill: rgba(var(--accent) 1);;
+    fill: rgba(var(--accent) 1);
+    ;
 }
 
-@media (prefers-color-scheme: dark) {
-    .cursor {
-        border-color: white;
-    }
-    .header {
+
+/* Dark mode*/
+/* @media (prefers-color-scheme: dark) {
+    .header__nav {
         background-color: #121212;
         color: white;
     }
@@ -63,9 +64,21 @@ svg:hover {
         fill: white;
     }
 
+    .logo {
+        stroke: white;
+        animation: fillWhite .6s ease-out forwards;
+        animation-delay: .6s;
+    }
+
+    @keyframes fillWhite {
+        to {
+            fill: white;
+        }
+    }
+
     body {
         background-color: #202020;
         color: white;
     }
 
-}
+} */
