@@ -1,11 +1,10 @@
-button {
+.hamburger, .burger-shower {
     display: none;
 }
 
 .header {
     width: 100vw;
     height: 90px;
-    z-index: 1000;
 }
 
 nav {
@@ -17,6 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 .header__links {
@@ -100,6 +100,11 @@ header nav ul li a {
         display: block;
     }
 
+    .burger-shower:checked ~ .hamburger:after {
+        transform: rotate(-45deg);
+        transition: all .3s ease-in-out;
+    }
+
     .hamburger:after {
         content: "";
         border: solid black;
@@ -108,6 +113,7 @@ header nav ul li a {
         margin-left: 8px;
         padding: 3px;
         transform: rotate(45deg);
+        transition: all .3s ease-in-out;
     }
 
     .header__links li a:after {
@@ -116,40 +122,14 @@ header nav ul li a {
 
     .burger-menu {
         position: absolute;
-        left: 290px;
+        left: 320px;
         top: 60px;
-        background-color: white;
         padding: 10px;
         margin-right: 0;
+        background-color: white;
     }
 
     .burger-menu li {
-        display: flex;
-        align-items: center;
         margin-top: 15px;
-        vertical-align: middle;
-        position: relative;
-        width: 120px;
-    }
-
-    a[href="https://github.com/InjuMichorius/"]:after {
-        content: "GitHub";
-        margin-left: 8px;
-        position: absolute;
-        top: 5px;
-    }
-
-    a[href="https://www.instagram.com/injuux/"]:after {
-        content: "Instagram";
-        margin-left: 10px;
-        position: absolute;
-        top: 5px;
-    }
-
-    a[href="https://www.linkedin.com/in/jumichorius/"]:after {
-        content: "LinkedIn";
-        margin-left: 10px;
-        position: absolute;
-        top: 5px;
     }
 }
