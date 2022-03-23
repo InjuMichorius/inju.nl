@@ -101,6 +101,10 @@ svg:hover {
 }
 
 @media (max-width: 700px) {
+    .header-logo {
+        display: inline;
+    }
+    
     ul {
         transform: translateX(100%);
     }
