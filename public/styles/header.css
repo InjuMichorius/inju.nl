@@ -1,135 +1,165 @@
-.hamburger, .burger-shower {
-    display: none;
-}
-
 .header {
     width: 100vw;
-    height: 90px;
-}
-
-nav {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
     z-index: 1000;
 }
 
-.header__links {
-    display: flex;
-    gap: 30px;
+nav {
+    height: 80px;
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo {
+    display: none;
+}
+
+nav ul {
     list-style-type: none;
-    margin-left: 60px;
+    transition: all .3s ease-in-out;
 }
 
-header nav ul li a {
-    text-decoration: none;
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a, nav ul li a:visited {
+    color: black;
     font-size: 1.2em;
-    transform: translateY(20px);
+    text-decoration: none;
     transition: all .3s ease;
-}
-
-.header__links li a:hover {
-    color: rgba(var(--accent) 1);
-}
-
-.header__links li a:after {
     position: relative;
+}
+
+.float-left li a:after {
     content: "";
-    display: block;
+    background-color: rgba(var(--accent) 1);
     height: 2px;
     width: 100%;
-    background-color: rgba(var(--accent) 1);
+    display: block;
+    position: absolute;
+    top: 30px;
     opacity: 0;
-    margin-top: 5px;
-    transform: translateY(5px);
     transition: all .3s ease-out;
 }
 
-.header__links li a:hover:after {
+.float-left li a:hover:after {
     content: "";
+    top: 25px;
     opacity: 1;
-    transform: translateY(0);
-
 }
 
-.header__socials {
-    justify-content: flex-end;
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    margin-right: 60px;
+nav ul li a:hover, nav ul li a:visited:hover {
+    color: rgba(var(--accent) 1);
 }
 
 .header__socials_link {
     width: 30px;
+    line-height: 80px;
+    height: 80px;
 }
 
+.float-right {
+    float: right;
+    margin-right: 20px;
+}
 
+.float-left {
+    float: left;
+    margin-left: 20px;
+}
 
-@media only screen and (max-width: 600px) {
-    nav {
-        justify-content: flex-start;
+#hamburger {
+    display: none;
+}
+
+#hamburger:checked ~ ul {
+    transform: translateX(0);
+}
+
+label svg {
+    display: none;
+    width: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+svg {
+    transition: all .3s ease-out;
+}
+
+svg:hover {
+    transform: translateY(-5px);
+    fill: rgba(var(--accent) 1);
+}
+
+@media (max-width: 700px) {
+    ul {
+        transform: translateX(100%);
     }
 
-    .header__links {
+    svg:hover {
+        transform: translateY(0);
+        fill: black;
+    }
+    .header-logo {
         margin-left: 20px;
-        gap: 15px;
+        width: 30px;
+        height: 80px;
+        line-height: 80px;
     }
-
-    .hamburger {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-left: 15px;
-        color: black;
-        font-size: 1.2em;
-        background-color: transparent;
-        border: none;
+    nav > svg {
+        display: inline;
     }
-
-    .burger-shower, .burger-menu {
-        display: none;
-    }
-
-    .burger-shower:checked ~ .burger-menu {
-        display: block;
-    }
-
-    .burger-shower:checked ~ .hamburger:after {
-        transform: rotate(-45deg);
-        transition: all .3s ease-in-out;
-    }
-
-    .hamburger:after {
-        content: "";
-        border: solid black;
-        border-width: 0 1px 1px 0;
-        display: inline-block;
-        margin-left: 8px;
-        padding: 3px;
-        transform: rotate(45deg);
-        transition: all .3s ease-in-out;
-    }
-
-    .header__links li a:after {
-        display: none;
-    }
-
-    .burger-menu {
-        position: absolute;
-        left: 320px;
-        top: 60px;
-        padding: 10px;
-        margin-right: 0;
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
         background-color: white;
+        z-index: 100;
+        padding: 100px;
     }
 
-    .burger-menu li {
-        margin-top: 15px;
+    .float-left, .float-right {
+        float: none;
+        margin: 0;
     }
+
+    nav ul li {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+
+    .float-right {
+        display: flex;
+        margin: auto;
+        gap: 10px;
+        width: 200px;
+        transform: translateY(10px);
+    }
+
+    .header__socials_link {
+        width: 30px;
+    }
+
+    nav ul li a {
+        font-size: 1.6em;
+    }
+
+    label svg {
+        display: inline;
+        line-height: 80px;
+        height: 80px;
+    }
+
 }

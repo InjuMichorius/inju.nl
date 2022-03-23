@@ -7,6 +7,10 @@ main svg {
     animation: fillBlack .6s ease-out forwards;
     animation-delay: .6s;
 }
+
+main svg:hover {
+    transform: translateY(0);
+}
   
 .path {
     stroke-dasharray: 1100;
