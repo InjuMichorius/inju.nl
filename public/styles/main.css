@@ -41,6 +41,10 @@ li a:hover {
 
 /* Dark mode*/
 @media (prefers-color-scheme: dark) {
+    .header-logo {
+        fill: white;
+    }
+    
     label svg, label svg:hover {
         fill: white;
     }
