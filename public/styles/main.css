@@ -29,6 +29,11 @@ body {
     display: none;
 }
 
+.cv {
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
 a, a:visited {
     color: black;
     cursor: pointer;

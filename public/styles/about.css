@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: calc(100vh - 80px);
+    padding: 0 100px;
+}
+
+.about h1 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 900px;
+    margin-bottom: 10px;
+}
+
+.about-image {
+    width: 300px;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .about-image {
+        width: 200px;
+        margin: 60px 0;
+    }
+}

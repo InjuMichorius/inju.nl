@@ -23,7 +23,7 @@
         </svg>
         <div class="wrapper">
             <h1 class="banner_title">Inju Michorius is a Frontend Designer based in the Netherlands</h1>
-            <p class="banner_text">I’m a last year communication and Multimedia Design student, learning to become a front-end developer with UI/UX skills</p>
+            <p class="banner_text">A last year communication and Multimedia Design student, learning to become a front-end developer with UI/UX skills</p>
         </div>
         <section class="section_projects">
             <article class="project">
