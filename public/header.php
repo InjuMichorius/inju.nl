@@ -16,7 +16,7 @@
             <div class="float-left">
                 <li><a href="./index.php">Projects</a></li>
                 <li><a href="./about.php">About</a></li>
-                <li><a href="./cv.php">Curriculum Vitae</a></li>
+                <li><a href="../files/CV.pdf">Curriculum Vitae</a></li>
             </div>
             <div class="float-right">
                 <li><a href="https://github.com/InjuMichorius/"><svg class="header__socials_link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
