@@ -1,6 +1,6 @@
 <header class="header">
     <nav class="header__nav">
-        <a href="http://injunl.local/index.php">
+        <a href="http://injunl.herokuapp.com/index.php">
             <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 416" class="header-logo">
                 <path class="path" stroke-width="4" d="M160,0V304.41A111.12,111.12,0,0,1,140,368.13a111.84,111.84,0,0,1-91.86,48.08h-.1v-320A48.17,48.17,0,0,0,0,48.07V0ZM319.86,0a111.79,111.79,0,0,0-111.8,111.8V416.21h.08A111.81,111.81,0,0,0,320,304.41V0ZM479.93,320V0h-.08A111.79,111.79,0,0,0,368,111.8V416.21H528V368.13A48.16,48.16,0,0,1,479.93,320Z" />
             </svg>
