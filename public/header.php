@@ -14,8 +14,8 @@
         </label>
         <ul class="header__links">
             <div class="float-left">
-                <li><a href="./index.php">Projects</a></li>
-                <li><a href="./about.php">About</a></li>
+                <li><a href="http://injunl.herokuapp.com/index.php">Projects</a></li>
+                <li><a href="http://injunl.herokuapp.com/public/about.php">About</a></li>
                 <li><a href="../files/CV.pdf">Curriculum Vitae</a></li>
             </div>
             <div class="float-right">
